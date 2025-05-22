@@ -39,6 +39,7 @@ int getReverse(char name[]){
 
 
 
+
 void replceSpaces(char sentance[]){
     int i = 0;
     int n  =strlen(sentance);
@@ -51,6 +52,59 @@ void replceSpaces(char sentance[]){
     }
     
 }
+
+
+
+bool checkPallindrome(char word[]){
+
+    int i = 0;
+    int n = strlen(word);
+    int end = n -1;
+
+    while (i <=end)
+    {
+        /* code */
+        if(word[i] != word[end]){
+            return false;
+
+        }
+
+        else{
+            i++;
+            end--;
+
+        }
+    }
+
+    return true;
+    
+}
+
+
+
+
+void convertUpper(char word[]){
+    int n = strlen(word);
+    
+
+    for(int i = 0 ; i <n ;i++){
+        word[i] = word[i]- 'a' + 'A';
+}
+}
+
+
+
+
+void convertLower(char word[]){
+    int n = strlen(word);
+    
+    
+    for(int i = 0 ; i <n ;i++){
+        if(word[i] >= 'A' && word[i]<='Z')
+        word[i] = word[i]- 'A' + 'a';
+}
+}
+
 
 
 int main(){
@@ -147,7 +201,39 @@ int main(){
 
 
 ////PALLINDROME
-char arr[6];
+// char word[60];
+// cin >> word;
+
+// checkPallindrome(word);
+
+// cout<<checkPallindrome(word)<<endl;
+
+
+
+//uppercase conversion
+
+// char word[20] = "nmohan";
+// // cin>>word;
+
+// convertUpper(word);
+// cout<<"lower to upper:"<<word<<endl;
+
+
+
+//CONVERTING UPPER TO LOWER
+// char word[40] = "mOHAN";
+// convertLower(word);
+// cout<<word;
+
+
+
+
+
+
+
+
+
+
 
 
 }
