@@ -147,7 +147,7 @@ int main(){
 
 
 ////PALLINDROME
-
+char arr[6];
 
 
 }
