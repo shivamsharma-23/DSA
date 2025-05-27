@@ -35,11 +35,11 @@ int main(){
     // cout<<sizeof(c)<<endl;
     // cout<<sizeof(d)<<endl;
 
-    int arr[4] = {10,20,30,40};
+    // int arr[4] = {10,20,30,40};
 
-    int* p =arr;
+    // int* p =arr;
 
-    // int* ptr = arr;
+    // // int* ptr = arr;
     // cout<<" arr: "<<arr<<endl;
     // cout<<" *arr: "<<*arr<<endl;
     // cout<<" arr[0] "<<arr[0]<<endl;
@@ -48,14 +48,16 @@ int main(){
     // cout<<" *arr[0]: "<<*arr[0]<<endl; -- error
 
 
-    int i =3;
+    // int i =3;
 
-    cout<<"i[arr]: "<<i[arr]<<endl;
+    // cout<<"i[arr]: "<<i[arr]<<endl;
 
-    cout<<"arr[i]: "<<arr[i]<<endl;
+    // cout<<"arr[i]: "<<arr[i]<<endl;
 
-    cout<<"*(p) + 1: " <<*(p) + 1<<endl; //index m naahi value m ek add hora hai
+    // cout<<"*(p) + 1: " <<*(p) + 1<<endl; //index m naahi value m ek add hora hai
 
-    cout<<"*(p+ 1): " <<*(p+ 1)<<endl;
+    // cout<<"*(p+ 1): " <<*(p+ 1)<<endl;
+
+    
 
 }
