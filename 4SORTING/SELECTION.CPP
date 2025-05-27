@@ -26,6 +26,9 @@ int main(){
     }
 
 
+
+
+    
     //printing arrayy
 
     for(int i = 0; i<n;i++){
