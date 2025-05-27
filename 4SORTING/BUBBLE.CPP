@@ -19,6 +19,9 @@ int main(){
     }
 
 
+
+
+    
     //printing 
 
     for(int i =0;i<n;i++){
