@@ -21,6 +21,7 @@ int factorial(int n ){
 }
 
 
+
 void counting(int n){
 
     //s1 base conditon 
