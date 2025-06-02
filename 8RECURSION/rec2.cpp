@@ -99,35 +99,73 @@ using namespace std;
 // ============================================
 //MINIMUM NUMBER 
 
-void findMini(int arr[] , int n ,int i, int &mini){
+// void findMini(int arr[] , int n ,int i, int &mini){
 
-    //1 base condition 
-    if(i>=n){
+//     //1 base condition 
+//     if(i>=n){
 
-     //agar iteration array k size se jyada higyii tohh stop kar jaooo
+//      //agar iteration array k size se jyada higyii tohh stop kar jaooo
 
-        return;
+//         return;
     
-    }
+//     }
 
-    // 1 case sambahal loo ek case solve krdoo
-    if(arr[i] < mini){
-        mini = arr[i];
-    }
-
-
-    //baaki recursion sambahal lega
-    findMini(arr,n,i+1,mini);
-
-}
-int main(){
-    int arr[] = {1,3,44,5,6,664,23,44,5,62,4543,4};
-    int n = 12;
-    int i = 0;
-    int mini = INT_MAX;
+//     // 1 case sambahal loo ek case solve krdoo
+//     if(arr[i] < mini){
+//         mini = arr[i];
+//     }
 
 
-    findMini(arr,n,i,mini);
+//     //baaki recursion sambahal lega
+//     findMini(arr,n,i+1,mini);
 
-    cout<<"minimum number in the array is: "<<mini<<endl;
-}
+// }
+// int main(){
+//     int arr[] = {1,3,44,5,6,664,23,44,5,62,4543,4};
+//     int n = 12;
+//     int i = 0;
+//     int mini = INT_MAX;
+
+
+//     findMini(arr,n,i,mini);
+
+//     cout<<"minimum number in the array is: "<<mini<<endl;
+// }
+
+
+// ========================================================================
+//CHECK KEY     
+
+
+// bool findKey(int arr[],int key ,int n , int i){
+//     //BASE CONDITION
+
+//     if(i>=n){
+//         return false;
+//     }
+
+//     //if key found
+//     if(arr[i] == key){
+//         return true;
+//     }
+
+
+//     findKey(arr,key,n,i+1);
+// }
+
+// int main(){
+//     int arr[] = {1,2,3,4,5};
+//     int key = 1;
+//     int n = 5;
+//     int i = 0;
+
+   
+
+//     if( findKey(arr,key,n,i)){
+//         cout<<"key find"<<endl;
+//     }
+
+//     else{
+//         cout<<"keynotfound";
+//     }
+// }
