@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<strings.h>
 using namespace std;
 
 
@@ -244,3 +245,31 @@ using namespace std;
 //         cout<<"key not found";
 //     }
 // }
+
+
+
+// ============================================================================
+
+
+void printSubseq(string str, string output , int i)
+{
+    //BASE CASEE
+    if(i>=str.length())
+    {
+        cout<<output<<endl;
+        return;
+    }
+   //exclude
+    printSubseq(str,output,i+1);
+    //include
+    output.push_back(str[i]);
+    printSubseq(str,output,i+1);
+}
+
+int main()
+{
+   string str = "abc";
+   string output = " ";
+   int i =0;
+   printSubseq(str ,output ,i);
+}
