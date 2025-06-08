@@ -49,7 +49,7 @@ using namespace std;
 // }
 
 
-// ======================================USING OUTPUT VALIABLE ==============================
+// ======================================  USING OUTPUT VALIABLE ==============================
 
 
 int solve(vector<int>& arr ,int output , int target){
@@ -91,3 +91,5 @@ int main(){
 
     cout<<"answer is: "<<ans<<endl;
 }
+
+

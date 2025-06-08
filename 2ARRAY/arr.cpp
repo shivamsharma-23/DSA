@@ -1,6 +1,8 @@
 
 #include<iostream>
 #include<limits.h>
+#include<vector>
+
 using namespace std;
 
 // int main(){
@@ -188,6 +190,28 @@ using namespace std;
         
     //     cout<<"min no is: "<<min;
     // }
+
+
+// FIND OUT THE MAXIMUM ELEMENT 
+
+    int main(){
+     int arr[] = {1,2,3,4,5,6,7,8};
+     int n = 8;
+     int key  = 2;
+
+
+     //for 
+     for(int i = 0; i < n ;i++){
+        if(key == arr[i]){
+            cout<< key <<" key found"<<endl;
+            return 0;
+
+    }
+     }
+    cout<<"key not found"<<endl;
+    return 0;
+}
+
 
 
 

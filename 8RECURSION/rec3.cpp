@@ -252,6 +252,7 @@ using namespace std;
 
 
 void printSubseq(string str, string output , int i)
+
 {
     //BASE CASEE
     if(i>=str.length())
@@ -261,15 +262,28 @@ void printSubseq(string str, string output , int i)
     }
    //exclude
     printSubseq(str,output,i+1);
+
+
     //include
     output.push_back(str[i]);
     printSubseq(str,output,i+1);
 }
 
+
+
+
 int main()
 {
+    // given string 
    string str = "abc";
+
+
+   // taking an empty string to put elemnts into..... 
    string output = " ";
+
+
    int i =0;
    printSubseq(str ,output ,i);
 }
+
+
