@@ -371,6 +371,25 @@ void deleteFromPosition(int position ,Node* &head, Node* &tail){
 }
 
 
+Node* reverse(Node* &prev , Node* &curr){
+    //base case 
+    if(curr == NULL){
+
+        //LL REVERSE HO CHUKI
+        return prev;
+
+    }
+        //1 case solve then recurssion will take care 
+        Node* forward = curr -> next;
+        curr -> next = prev;
+
+        reverse(curr,forward);
+
+    
+}
+
+
+
 int main(){
 
 Node * first = new Node(10);
@@ -418,6 +437,16 @@ deleteFromPosition(3,head,tail);
 cout<<"after deletion: ";
 print(head);
 cout<<endl;
+
+
+Node* prev = NULL;
+Node* curr = head;
+head = reverse(prev,curr);
+cout<<"after reversing the linked list:";
+print(head);
+cout<<endl;
+
+
 
 return 0;
 }
