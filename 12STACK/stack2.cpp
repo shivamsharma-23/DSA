@@ -126,143 +126,239 @@
 
 // --------------------------------------
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
 
-class Stack{
+// class Stack{
 
 
-    //DATA MEMBERS 
+//     //DATA MEMBERS 
 
-    public:
-    int * arr;
-    int size;
-    int data;
-    int top1;
-    int top2;
+//     public:
+//     int * arr;
+//     int size;
+//     int data;
+//     int top1;
+//     int top2;
 
 
    
 
-    //CONSTRUCTOR
-    Stack(int size){
-        arr = new int[size];
-        this -> size = size;
-        top1 = -1;
-        top2 = size;
+//     //CONSTRUCTOR
+//     Stack(int size){
+//         arr = new int[size];
+//         this -> size = size;
+//         top1 = -1;
+//         top2 = size;
 
-    }
-
-
-    // MEMBER FUNCTIONS
-
-    void push1(int data){
-
-        //stack full
-        if(top2 - top1 == 1)
-        {
-            cout<<"stack 1 overflow"<<endl;
-
-        }
-        //stack m jhgay h 
-        else
-        {
-            top1++;
-            arr[top1] = data;
-        }
+//     }
 
 
-    }
+//     // MEMBER FUNCTIONS
 
-    void pop1(){
-        //stack empty toh nahi
+//     void push1(int data){
 
-        if(top1 == -1){
-            cout<<"stack 1 underflow "<<endl;
-        }
+//         //stack full
+//         if(top2 - top1 == 1)
+//         {
+//             cout<<"stack 1 overflow"<<endl;
 
-        else{
-            arr[top1] = 0; 
-            top1--;
-        }
-
-
-    }
-
-
-    void push2(int data){
-         //stack full
-        if(top2 - top1 == 1){
-            cout<<"stack 2 overflow"<<endl;
-
-        }
-        //stack m jhgay h 
-
-        else{
-
-            top2--;
-            arr[top2] = data;
-        }
+//         }
+//         //stack m jhgay h 
+//         else
+//         {
+//             top1++;
+//             arr[top1] = data;
+//         }
 
 
-    }
+//     }
+
+//     void pop1(){
+//         //stack empty toh nahi
+
+//         if(top1 == -1){
+//             cout<<"stack 1 underflow "<<endl;
+//         }
+
+//         else{
+//             arr[top1] = 0; 
+//             top1--;
+//         }
 
 
-    void pop2(){
-         //stack empty toh nahi
-
-        if(top2 == size){
-            cout<<"stack 2 underflow "<<endl;
-        }
-
-        else{
-            arr[top2] = 0; 
-            top2++;
-        }
+//     }
 
 
+//     void push2(int data){
+//          //stack full
+//         if(top2 - top1 == 1){
+//             cout<<"stack 2 overflow"<<endl;
 
-    }
+//         }
+//         //stack m jhgay h 
 
-    void print(){
+//         else{
 
-          cout<<"top1: "<<top1<<endl;
-          cout<<"top2: "<<top2<<endl;
-        for(int i = 0; i < size; i++)
-        {
-            cout<<arr[i]<<" ";
-        }
-        cout<<endl;
-    }
+//             top2--;
+//             arr[top2] = data;
+//         }
 
-};
+
+//     }
+
+
+//     void pop2(){
+//          //stack empty toh nahi
+
+//         if(top2 == size){
+//             cout<<"stack 2 underflow "<<endl;
+//         }
+
+//         else{
+//             arr[top2] = 0; 
+//             top2++;
+//         }
+
+
+
+//     }
+
+//     void print(){
+
+//           cout<<"top1: "<<top1<<endl;
+//           cout<<"top2: "<<top2<<endl;
+//         for(int i = 0; i < size; i++)
+//         {
+//             cout<<arr[i]<<" ";
+//         }
+//         cout<<endl;
+//     }
+
+// };
+
+
+// int main(){
+
+//     Stack s(10);
+
+//     s.push1(10);
+//      s.push1(20);
+//       s.push1(30);
+//        s.push1(40);
+//         s.push1(50);
+
+
+//      s.push2(100);
+//      s.push2(200);
+//       s.push2(300);
+//        s.push2(400);
+//         s.push2(500);
+//         //  s.push2(700);
+//          s.print();
+
+//         cout<<endl;
+//         cout<<"after removing: "<<endl;
+
+//         s.pop1();
+//         s.pop1();
+//           s.print();
+
+// }
+
+
+// =============================================
+
+// #include<iostream>
+// #include<stack>
+// using namespace std;
+
+
+// void solve(stack<int>&s , int target){
+//     //base case
+
+//     if(s.empty()){
+//         s.push(target);
+//         return;
+//     }
+
+//     // step 2
+
+//     int topElement = s.top();
+//     s.pop();
+
+//     //rec call
+//     solve(s,target);
+
+//     //BT --- backtracking
+//     s.push(topElement);
+
+// }
+
+
+// void insertAtBottom(stack<int> &s){
+//     if(s.empty()){
+//         cout<<"stack is empty, cant insert at bottom"<<endl;
+//         return;
+//     }
+
+//     int target = s.top();
+//     s.pop();
+//     solve(s,target);
+// }
+
+
+// int main(){
+
+//     stack<int> s;
+//     s.push(10);
+//     s.push(30);
+//     s.push(40);
+//     s.push(50);
+
+
+//     insertAtBottom(s);
+
+//     while(!s.empty()){
+//         cout<<s.top() <<" ";
+//         s.pop();
+
+//     }
+//     return 0;
+// }
+
+
+
+
+
+
+// =======================================
+#include<iostream>
+#include<stack>
+using namespace std;
+
+void reverseStack(stack<int> &s){
+
+
+
+
+}
+
+
+
 
 
 int main(){
-
-    Stack s(10);
-
-    s.push1(10);
-     s.push1(20);
-      s.push1(30);
-       s.push1(40);
-        s.push1(50);
+    stack<int> s;
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(40);
 
 
-     s.push2(100);
-     s.push2(200);
-      s.push2(300);
-       s.push2(400);
-        s.push2(500);
-        //  s.push2(700);
-         s.print();
+    reverseStack(s);
 
-        cout<<endl;
-        cout<<"after removing: "<<endl;
-
-        s.pop1();
-        s.pop1();
-          s.print();
+    return 0;
 
 }
